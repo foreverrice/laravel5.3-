@@ -14,10 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::group(['prefix' => 'index'], function () {
+Route::get('phpinfo','InfoController@index');
+/*Route::group(['prefix' => 'index'], function () {
     Route::get('line', 'IndexController@getLines');
     Route::get('club', 'IndexController@getClubs');
     Route::get('thread', 'IndexController@getThreads');
     Route::get('foreign', 'IndexController@getForeign');
     Route::get('province', 'IndexController@getProvince');
-});
+});*/
